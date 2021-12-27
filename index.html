@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Quiz</title>
+    <link
+      rel="icon"
+      href="../../asset/img/logo-website.svg"
+      type="image/x-icon"
+    />
+    <style>
+      body {
+        height: 100vh;
+        margin: 0;
+        display: grid;
+        place-items: center;
+        background-color: #4481eb;
+      }
+
+      .border-gradient {
+        border: 10px solid;
+        border-image-slice: 1;
+        border-width: 10px;
+      }
+      .border-gradient-purple {
+        border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+      }
+      #gameScreen {
+        background-image: url("./img/background.png");
+      }
+
+      #ball {
+        display: none;
+      }
+      #brick {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="./img/ball.png" alt="" srcset="" id="ball" />
+    <img src="./img/brick.png" alt="" srcset="" id="brick" />
+    <div class="border">
+      <canvas
+        id="gameScreen"
+        class="border-gradient border-gradient-purple"
+        width="800"
+        height="600"
+      ></canvas>
+    </div>
+
+    <script type="module" src="./src/index.js"></script>
+  </body>
+</html>
